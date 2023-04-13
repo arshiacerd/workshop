@@ -13,6 +13,7 @@ import About from './pages/About/About';
 import Login from './pages/login/Login';
 import PR from './components/PR';
 import ItemDetail from "./pages/ItemDetail/ItemDetail"
+import ItemDetail2 from './pages/ItemDetail/ItemDetail2';
 function App() {
   const profile = {
     name: "Arshia",
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" element={<PR Component={Home} />} />
           <Route exact path="/about" element={<PR Component={About} />} />
           <Route exact path="/itemDetail/:id" element={<PR Component={ItemDetail} />} />
+          <Route path="/itemDetail2/:id" element={<ItemDetail2 />} />
           <Route path="/login" element={<Login />} />
 
 

@@ -7,7 +7,7 @@ const ItemDetail = () => {
   useEffect(() => {
     fetch('https://fakestoreapi.com/products/' + id)
       .then(res => res.json())
-      .then(json => setItem(json))
+      .then(json => console.log(json))
   }, [])
   return (
     <div>

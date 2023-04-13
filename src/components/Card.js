@@ -10,7 +10,7 @@ const Card = (props) => {
             .then(json=>setStore(json))
   },[])
  const viewItem=(id)=>{
-   navigate("/itemDetail/" + id)
+   navigate("/itemDetail2/" + id)
  
  }
   return (
